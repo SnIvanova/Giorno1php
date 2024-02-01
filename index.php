@@ -25,7 +25,8 @@
 
 
 
-    <?php $sqUsa = [
+    <?php
+    $sqUsa = [
         'Girls' => ['Taylor Swift', 'Beyoncé', 'Katy Perry'],
         'Mix' => ['Ariana Grande', 'Justin Timberlake', 'Dua Lipa'],
         'Boys' => ['Drake', 'Ed Sheeran', 'John Legend'],
@@ -43,13 +44,13 @@
             <div class="col-md-6">
                 <h2 class="mb-4">USA:</h2>
                 <?php
-                foreach ($sqUsa as $squadra => $formazione) {
+                foreach ($sqUsa as $squadra => $info) {
                     echo '<div class="card mb-3">';
                     echo '<div class="card-body">';
                     echo "<h5 class='card-title'>$squadra</h5>";
                     echo '<ul class="list-group list-group-flush">';
-                    foreach ($formazione as $giocatore) {
-                        echo "<li class='list-group-item'>$giocatore</li>";
+                    foreach ($info as $singer) {
+                        echo "<li class='list-group-item'>$singer</li>";
                     }
                     echo '</ul>';
                     echo '</div>';
@@ -61,13 +62,13 @@
             <div class="col-md-6">
                 <h2 class="mb-4">Europe:</h2>
                 <?php
-                foreach ($sqEup as $squadra => $formazione) {
+                foreach ($sqEup as $squadra => $info) {
                     echo '<div class="card mb-3">';
                     echo '<div class="card-body">';
                     echo "<h5 class='card-title'>$squadra</h5>";
                     echo '<ul class="list-group list-group-flush">';
-                    foreach ($formazione as $giocatore) {
-                        echo "<li class='list-group-item'>$giocatore</li>";
+                    foreach ($info as $singer) {
+                        echo "<li class='list-group-item'>$singer</li>";
                     }
                     echo '</ul>';
                     echo '</div>';
@@ -85,11 +86,11 @@
                 <div class="col-md-6 d-flex flex-column align-content-end flex-wrap align-items-center">
                     <h6 class="mt-3">USA:</h6>
                     <?php
-                    foreach ($sqUsa as $squadra => $formazione) {
+                    foreach ($sqUsa as $squadra => $info) {
                         echo "<p><strong>$squadra:</strong></p>";
                         echo '<ul>';
-                        foreach ($formazione as $giocatore) {
-                            echo "<li>$giocatore</li>";
+                        foreach ($info as $singer) {
+                            echo "<li>$singer</li>";
                         }
                         echo '</ul>';
                     }
@@ -98,11 +99,11 @@
                 <div class="col-md-6">
                     <h6 class="mt-3">Europe:</h6>
                     <?php
-                    foreach ($sqEup as $squadra => $formazione) {
+                    foreach ($sqEup as $squadra => $info) {
                         echo "<p><strong>$squadra:</strong></p>";
                         echo '<ul>';
-                        foreach ($formazione as $giocatore) {
-                            echo "<li>$giocatore</li>";
+                        foreach ($info as $singer) {
+                            echo "<li>$singer</li>";
                         }
                         echo '</ul>';
                     }
